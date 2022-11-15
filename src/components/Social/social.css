@@ -1,0 +1,14 @@
+footer{
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    margin: 18px 0;
+}
+
+.social svg{
+    transition: 0.4s;
+}
+
+.social svg:hover{
+    transform: scale(1.05);
+}

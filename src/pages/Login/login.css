@@ -1,0 +1,37 @@
+.login-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    width: 90%;
+}
+
+.form input{
+    border: 0;
+    height: 36px;
+    margin-bottom: 14px;
+    border-radius: 4px;
+    padding: 0 8px;
+    outline: none; /*Tira o efeito da borda do input*/
+}
+
+.form button{
+    height: 36px;
+    border-radius: 4px;
+    background-color: #3366ff;
+    border: 0;
+    font-size: 18px;
+    color: #fff;
+    transition: 0.4s;
+}
+
+.form button:hover{
+    background-color: #4965b8;
+}
