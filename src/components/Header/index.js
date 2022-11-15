@@ -1,7 +1,8 @@
 import './header.css';
 
+
 import {BiLogOut} from 'react-icons/bi';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 import { auth } from '../../services/FirebaseConnection';
 import {signOut} from 'firebase/auth'
@@ -9,8 +10,13 @@ import {signOut} from 'firebase/auth'
 
 const Header = () => {
 
+  const navigate = useNavigate();
+
   const handleLogout = async () => {
     await signOut(auth)
+    navigate("/", { replace: true })
+
+
   }  
 
   return (
