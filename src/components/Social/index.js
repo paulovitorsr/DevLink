@@ -1,6 +1,5 @@
 import React from 'react';
 import './social.css';
-import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 
 const Social = ({children ,url}) => {
   return (
